@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adeena - Web Engineering</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <a href="#main-content" class="skip-link">
+        Skip to main content
+    </a>
+
+    <header>
+        <h1 id="greeting">Hi, Adeena! 🌷</h1>
+
+        <p>Welcome to my Web Engineering page.</p>
+
+        <nav aria-label="Main navigation">
+            <ul>
+                <li>
+                    <a href="#office-hours" aria-current="location">
+                        Office Hours
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#feedback">
+                        Send Feedback
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <main id="main-content">
+
+        <section id="office-hours">
+
+            <h2>Office Hours</h2>
+
+            <p>Here is my weekly office hours schedule.</p>
+
+            <div class="office-area">
+
+                <table>
+
+                    <caption>Weekly Office Hours</caption>
+
+                    <thead>
+                        <tr>
+                            <th scope="col">Day</th>
+                            <th scope="col">Time</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+
+                        <tr>
+                            <th scope="row">Monday</th>
+                            <td>
+                                <time datetime="10:00">10:00 AM</time>
+                                -
+                                <time datetime="12:00">12:00 PM</time>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">Tuesday</th>
+                            <td>
+                                <time datetime="12:00">12:00 PM</time>
+                                -
+                                <time datetime="14:00">2:00 PM</time>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">Wednesday</th>
+                            <td>
+                                <time datetime="10:00">10:00 AM</time>
+                                -
+                                <time datetime="12:00">12:00 PM</time>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">Thursday</th>
+                            <td>
+                                <time datetime="13:00">1:00 PM</time>
+                                -
+                                <time datetime="15:00">3:00 PM</time>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">Friday</th>
+                            <td>
+                                <time datetime="11:00">11:00 AM</time>
+                                -
+                                <time datetime="13:00">1:00 PM</time>
+                            </td>
+                        </tr>
+
+                    </tbody>
+
+                </table>
+
+
+                <figure>
+
+                    <svg
+                        width="150"
+                        height="150"
+                        viewBox="0 0 150 150"
+                        role="img"
+                        aria-labelledby="calendar-title">
+
+                        <title id="calendar-title">
+                            Calendar icon for office hours
+                        </title>
+
+                        <rect
+                            x="20"
+                            y="30"
+                            width="110"
+                            height="95"
+                            rx="10"
+                            fill="none"
+                            stroke="#d66c9c"
+                            stroke-width="6">
+                        </rect>
+
+                        <line
+                            x1="20"
+                            y1="55"
+                            x2="130"
+                            y2="55"
+                            stroke="#d66c9c"
+                            stroke-width="6">
+                        </line>
+
+                        <circle cx="50" cy="80" r="6" fill="#d66c9c"></circle>
+                        <circle cx="75" cy="80" r="6" fill="#d66c9c"></circle>
+                        <circle cx="100" cy="80" r="6" fill="#d66c9c"></circle>
+
+                        <circle cx="50" cy="105" r="6" fill="#d66c9c"></circle>
+                        <circle cx="75" cy="105" r="6" fill="#d66c9c"></circle>
+
+                    </svg>
+
+                    <figcaption>My weekly schedule</figcaption>
+
+                </figure>
+
+            </div>
+
+        </section>
+
+
+        <div class="divider" aria-hidden="true">
+
+            <svg width="100%" height="30">
+                <line
+                    x1="0"
+                    y1="15"
+                    x2="100%"
+                    y2="15"
+                    stroke="#e3a2c0"
+                    stroke-width="3">
+                </line>
+            </svg>
+
+        </div>
+
+
+        <section id="feedback">
+
+            <h2>Send Feedback</h2>
+
+            <p>
+                I would love to hear your questions and suggestions.
+            </p>
+
+            <form id="feedback-form">
+
+                <label for="name">Name:</label>
+
+                <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    required>
+
+
+                <label for="email">Email:</label>
+
+                <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    aria-describedby="email-hint"
+                    required>
+
+                <small id="email-hint">
+                    Please enter a valid email address.
+                </small>
+
+
+                <fieldset>
+
+                    <legend>Topic</legend>
+
+                    <label>
+                        <input
+                            type="radio"
+                            name="topic"
+                            value="question"
+                            required>
+                        Question
+                    </label>
+
+                    <label>
+                        <input
+                            type="radio"
+                            name="topic"
+                            value="suggestion">
+                        Suggestion
+                    </label>
+
+                    <label>
+                        <input
+                            type="radio"
+                            name="topic"
+                            value="feedback">
+                        General Feedback
+                    </label>
+
+                </fieldset>
+
+
+                <label for="message">Message:</label>
+
+                <textarea
+                    id="message"
+                    name="message"
+                    rows="5"
+                    required>
+                </textarea>
+
+
+                <button type="submit">
+                    Send Feedback
+                </button>
+
+                <p id="form-message"></p>
+
+            </form>
+
+        </section>
+
+    </main>
+
+
+    <footer>
+
+        <p>© 2026 Adeena Waqar</p>
+
+        <address>
+            Islamabad, Pakistan<br>
+
+            <a href="mailto:adeena@example.com">
+                adeena@example.com
+            </a>
+        </address>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
+

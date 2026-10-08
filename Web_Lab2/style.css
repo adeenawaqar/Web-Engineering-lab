@@ -1,0 +1,235 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f8fffd;
+    color: #294543;
+}
+
+
+/* Skip Link */
+
+.skip-link {
+    position: absolute;
+    top: -50px;
+    left: 10px;
+    background-color: white;
+    padding: 10px;
+}
+
+.skip-link:focus {
+    top: 10px;
+}
+
+
+/* Header */
+
+header {
+    background-color: #dff8f2;
+    padding: 30px;
+    text-align: center;
+}
+
+h1 {
+    color: #245a55;
+}
+
+
+/* Navigation */
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav li {
+    display: inline-block;
+    margin: 5px;
+}
+
+nav a {
+    display: inline-block;
+    background-color: white;
+    color: #197d78;
+    padding: 10px 15px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    background-color: #fff0f7;
+}
+
+
+/* Main */
+
+main {
+    max-width: 900px;
+    margin: auto;
+    padding: 40px 20px;
+}
+
+h2 {
+    color: #315d59;
+}
+
+
+/* Office Hours */
+
+.office-area {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+
+/* Table */
+
+table {
+    background-color: white;
+    border-collapse: collapse;
+    width: 60%;
+}
+
+caption {
+    font-weight: bold;
+    padding: 10px;
+}
+
+th,
+td {
+    border: 1px solid #d9ece8;
+    padding: 12px;
+    text-align: left;
+}
+
+th {
+    background-color: #e9f8f5;
+}
+
+
+/* Figure */
+
+figure {
+    background-color: #fff1f7;
+    padding: 20px;
+    text-align: center;
+    border-radius: 15px;
+}
+
+figcaption {
+    color: #72566a;
+}
+
+
+/* Divider */
+
+.divider {
+    margin: 40px 0;
+}
+
+
+/* Form */
+
+form {
+    background-color: white;
+    padding: 25px;
+    border-radius: 15px;
+    border: 1px solid #d9ece8;
+}
+
+label {
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #d6e8e5;
+    border-radius: 8px;
+}
+
+textarea {
+    resize: vertical;
+}
+
+small {
+    color: #6c7f7d;
+}
+
+
+/* Radio Buttons */
+
+fieldset {
+    margin-top: 20px;
+    padding: 15px;
+}
+
+fieldset label {
+    font-weight: normal;
+}
+
+
+/* Button */
+
+button {
+    margin-top: 20px;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 20px;
+    background-color: #d66c9c;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #c55789;
+}
+
+
+/* Keyboard Focus */
+
+a:focus-visible,
+input:focus-visible,
+textarea:focus-visible,
+button:focus-visible {
+    outline: 3px solid #197d78;
+    outline-offset: 3px;
+}
+
+
+/* Footer */
+
+footer {
+    background-color: #234d4a;
+    color: white;
+    padding: 30px;
+    text-align: center;
+}
+
+footer a {
+    color: #bceee5;
+}
+
+
+/* Mobile */
+
+@media (max-width: 700px) {
+
+    .office-area {
+        display: block;
+    }
+
+    table {
+        width: 100%;
+    }
+
+    figure {
+        margin-top: 25px;
+    }
+}
+
