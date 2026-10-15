@@ -1,0 +1,605 @@
+
+/* =================================
+   COMMON CSS
+================================= */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #7fb8be;
+    color: #263746;
+    line-height: 1.6;
+}
+
+.main-header {
+    text-align: center;
+    padding: 45px 20px;
+    background: linear-gradient(135deg, #99d8d2, #fce4ef);
+}
+
+.lab-label {
+    color: #168b88;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+
+.main-header h1 {
+    margin: 5px 0;
+    font-size: 34px;
+    color: #174e5b;
+}
+
+.subtitle {
+    margin: 10px auto 0;
+    max-width: 600px;
+    color: #536b75;
+}
+
+.container {
+    max-width: 1000px;
+    width: 92%;
+    margin: 30px auto;
+}
+
+.task-card {
+    background-color: rgb(149, 184, 206);
+    margin-bottom: 25px;
+    padding: 25px;
+    border: 1px solid #7aa8ae;
+    border-radius: 14px;
+    box-shadow: 0 5px 18px rgba(40, 100, 110, 0.06);
+}
+
+.task-card h2 {
+    color: #147f83;
+    margin-top: 0;
+    padding-bottom: 8px;
+    border-bottom: 2px solid #d9f2ef;
+}
+
+.description {
+    color: #71818a;
+    font-size: 14px;
+}
+
+button {
+    cursor: pointer;
+    border: none;
+    border-radius: 6px;
+    padding: 10px 16px;
+    font-size: 14px;
+}
+
+
+/* =================================
+   TASK 1: CSS COLORS
+================================= */
+
+#box {
+    background-color: blue;
+    color: white;
+    padding: 15px;
+    border-radius: 6px;
+    margin: 15px 0;
+}
+
+.heading {
+    color: rgb(62, 128, 138);
+}
+
+.heading-examples h1,
+.heading-examples h2,
+.heading-examples h3 {
+    margin: 8px 0;
+}
+
+.button-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.green-button {
+    background-color: green;
+    color: white;
+}
+
+/* Internal CSS button */
+.blue-button {
+    background-color: blue;
+    color: white;
+}
+
+.note {
+    font-size: 12px;
+    color: #71818a;
+    margin-top: 15px;
+}
+
+
+/* =================================
+   TASK 2: TEXT STYLING
+================================= */
+
+.text-demo {
+    background-color: #f1fbfa;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+.center-heading {
+    text-align: center;
+    text-transform: capitalize;
+    color: #d95786;
+}
+
+.styled-text {
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+
+/* =================================
+   TASK 3: PX, EM AND REM
+================================= */
+
+.unit-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 15px;
+}
+
+.unit-box {
+    min-width: 0;
+    padding: 15px;
+    background-color: #f3fbfc;
+    border: 1px solid #d9edef;
+    border-radius: 10px;
+    overflow-wrap: anywhere;
+}
+
+.unit-box h3 {
+    color: #168b88;
+    font-size: 16px;
+}
+
+.outer-px {
+    font-size: 25px;
+    margin: 10px 0;
+}
+
+.inner-px {
+    font-size: 10px;
+}
+
+.outer-em {
+    font-size: 1.5625em;
+    margin: 10px 0;
+}
+
+.inner-em {
+    font-size: 0.4em;
+}
+
+.outer-rem {
+    font-size: 1.5625rem;
+    margin: 10px 0;
+}
+
+.inner-rem {
+    font-size: 0.625rem;
+}
+
+.unit-note {
+    font-size: 12px;
+    color: #71818a;
+}
+
+
+/* =================================
+   TASK 4: NAVIGATION BAR
+================================= */
+
+.navbar {
+    min-height: 65px;
+    padding: 12px 20px;
+    background-color: #174e5b;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    flex-wrap: wrap;
+    border-radius: 8px;
+}
+
+.logo {
+    color: white;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.logo span {
+    color: #ff9fc3;
+}
+
+.links {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.links a,
+.page-links a {
+    color: white;
+    text-decoration: none;
+}
+
+.links a:hover,
+.page-links a:hover {
+    color: #ffb7d0;
+}
+
+.search {
+    display: flex;
+    gap: 5px;
+}
+
+.search input {
+    width: 130px;
+    min-width: 0;
+    padding: 9px;
+    border: none;
+    border-radius: 5px;
+}
+
+.search button {
+    background-color: #ffb7d0;
+    color: #263746;
+}
+
+
+/* =================================
+   TASK 5: PAGE LAYOUT
+================================= */
+
+.page-header {
+    background-color: #174e5b;
+    padding: 15px 20px;
+    border-radius: 8px 8px 0 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.page-links {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.content {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 15px;
+    flex-wrap: wrap;
+    padding: 30px 15px;
+    border: 1px solid #dcebed;
+    background-color: #f8fcfc;
+}
+
+.layout-box {
+    width: 120px;
+    height: 110px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #b4dfe0;
+    color: #174e5b;
+    font-weight: bold;
+}
+
+.box1 {
+    background-color: rgba(255, 120, 150, 0.4);
+    border-radius: 10px;
+}
+
+.box2 {
+    background-color: rgba(100, 210, 170, 0.4);
+    border-radius: 10px;
+}
+
+.box3 {
+    background-color: rgba(100, 160, 255, 0.3);
+    border-radius: 50%;
+}
+
+.page-footer {
+    background-color: #174e5b;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    border-radius: 0 0 8px 8px;
+    font-size: 13px;
+}
+
+
+/* =================================
+   TASK 6: FIXED LOVE NATURE BOX
+================================= */
+
+.nature-demo {
+    padding: 20px;
+    background-color: #f0faf2;
+    border-left: 4px solid #6cba83;
+    border-radius: 8px;
+}
+
+.nature-demo h3 {
+    color: #357b4a;
+}
+
+/* Fixed box stays in the same screen position */
+.love-nature {
+    width: 145px;
+    min-height: 75px;
+    position: fixed;
+    right: 0;
+    top: 45%;
+    z-index: 100;
+
+    background-color: #d7f5df;
+    color: #22623b;
+    border: 1px solid #a7dcb7;
+    border-radius: 10px 0 0 10px;
+    box-shadow: 0 3px 12px rgba(30, 80, 40, 0.15);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 15px;
+    font-weight: bold;
+}
+
+
+/* =================================
+   TASK 7: FLEXBOX CENTERING
+================================= */
+
+.parent {
+    height: 220px;
+    background-color: #e1f5fb;
+    border: 2px dashed #91d2df;
+    border-radius: 10px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.child {
+    width: 140px;
+    height: 85px;
+    background-color: #b9efc9;
+    color: #285b3a;
+    border: 1px solid #8ed5a5;
+    border-radius: 10px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+
+/* =================================
+   TASK 8: MEDIA QUERIES
+================================= */
+
+.responsive-box {
+    min-height: 120px;
+    background-color: blue;
+    color: white;
+    border-radius: 10px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 15px;
+}
+
+.screen-guide {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 8px;
+    margin-top: 15px;
+}
+
+.screen-guide span {
+    background-color: #f1f7f8;
+    padding: 8px;
+    border-radius: 5px;
+    font-size: 12px;
+}
+
+/* Below 300px */
+@media (max-width: 299px) {
+    .responsive-box {
+        background-color: green;
+    }
+}
+
+/* 300px to 399px */
+@media (min-width: 300px) and (max-width: 399px) {
+    .responsive-box {
+        background-color: pink;
+        color: black;
+    }
+}
+
+/* 400px to 600px */
+@media (min-width: 400px) and (max-width: 600px) {
+    .responsive-box {
+        background-color: red;
+    }
+}
+
+/* Above 600px */
+@media (min-width: 601px) {
+    .responsive-box {
+        background-color: blue;
+    }
+}
+
+
+/* =================================
+   TASK 9: HOVER TRANSITION
+================================= */
+
+.hover-area {
+    padding: 25px 0;
+    text-align: center;
+    background-color: #83a1c5;
+    border-radius: 10px;
+}
+
+.hover-button {
+    background-color: #6e9be3;
+    color: rgb(212, 37, 37);
+    padding: 12px 25px;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+.hover-button:hover {
+    background-color: #e9d5dc;
+    transform: scale(1.1) rotate(3deg);
+    box-shadow: 0 5px 15px rgba(70, 100, 150, 0.2);
+}
+
+
+/* =================================
+   TASK 10: CSS LOADER
+================================= */
+
+.loader-area {
+    padding: 20px;
+    background-color: #f5fbfc;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.loader {
+    width: 65px;
+    height: 65px;
+    margin: 0 auto;
+
+    border: 8px solid #dcebed;
+    border-top: 8px solid #168b88;
+    border-right: 8px solid #ff9fc3;
+    border-radius: 50%;
+
+    animation: spin 1s linear infinite;
+}
+
+.loader-area p {
+    color: #71818a;
+    font-size: 13px;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+
+/* =================================
+   FOOTER
+================================= */
+
+.main-footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #174e5b;
+    color: white;
+    font-size: 13px;
+}
+
+.main-footer p {
+    margin: 4px;
+}
+
+
+/* =================================
+   RESPONSIVE DESIGN
+================================= */
+
+@media (max-width: 650px) {
+    .main-header h1 {
+        font-size: 27px;
+    }
+
+    .task-card {
+        padding: 16px;
+    }
+
+    .unit-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .navbar {
+        justify-content: center;
+    }
+
+    .links {
+        justify-content: center;
+    }
+
+    .search {
+        max-width: 100%;
+    }
+
+    .page-header {
+        justify-content: center;
+    }
+
+    .love-nature {
+        width: 115px;
+        min-height: 55px;
+        font-size: 12px;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto;
+    }
+
+    .loader {
+        animation: none;
+    }
+
+    .hover-button {
+        transition: none;
+    }
+}

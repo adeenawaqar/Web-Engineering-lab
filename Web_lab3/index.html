@@ -1,0 +1,265 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Web Engineering Lab 03</title>
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <!-- Main Heading -->
+    <header class="main-header">
+        <p class="lab-label">WEB ENGINEERING</p>
+        <h1>Lab 03: CSS Practice</h1>
+        <p class="subtitle">
+            Learning CSS with colors, layouts, responsive design and animations.
+        </p>
+    </header>
+
+    <main class="container">
+
+        <!-- TASK 1 -->
+        <section class="task-card">
+            <h2>Task 1: CSS Colors</h2>
+            <p class="description">
+                Learn ID selectors, class selectors and three types of CSS.
+            </p>
+
+            <div id="box">Blue Box using ID Selector</div>
+
+            <div class="heading-examples">
+                <h1 class="heading">Lab 3 </h1>
+                <h2 class="heading">Web Engineering</h2>
+                <h3 class="heading">Learn CSS</h3>
+            </div>
+
+            <div class="button-group">
+                <button class="green-button">External CSS</button>
+
+                <button class="blue-button">Internal CSS</button>
+
+                <button style="background-color: pink; color: #333;">
+                    Inline CSS
+                </button>
+            </div>
+
+            <p class="note">
+                Green = style.css | Blue = style tag | Pink = inline style
+            </p>
+        </section>
+
+
+        <!-- TASK 2 -->
+        <section class="task-card">
+            <h2>Task 2: Text Styling</h2>
+            <p class="description">
+                Use text-align and text-transform properties.
+            </p>
+
+            <div class="text-demo">
+                <h3 class="center-heading">welcome to css lab</h3>
+                <p class="styled-text">
+                    CSS makes web pages beautiful and readable.
+                </p>
+            </div>
+        </section>
+
+
+        <!-- TASK 3 -->
+        <section class="task-card">
+            <h2>Task 3: px, em and rem</h2>
+            <p class="description">
+                Compare fixed, parent-relative and root-relative font sizes.
+            </p>
+
+            <div class="unit-grid">
+
+                <div class="unit-box">
+                    <h3>Pixels (px)</h3>
+                    <div class="outer-px">
+                        Outer Text: 25px
+                        <div class="inner-px">
+                            Inner Text: 10px
+                        </div>
+                    </div>
+                    <p class="unit-note">Fixed size</p>
+                </div>
+
+                <div class="unit-box">
+                    <h3>EM (em)</h3>
+                    <div class="outer-em">
+                        Outer Text: 1.5625em
+                        <div class="inner-em">
+                            Inner Text: 0.4em
+                        </div>
+                    </div>
+                    <p class="unit-note">Relative to parent</p>
+                </div>
+
+                <div class="unit-box">
+                    <h3>REM (rem)</h3>
+                    <div class="outer-rem">
+                        Outer Text: 1.5625rem
+                        <div class="inner-rem">
+                            Inner Text: 0.625rem
+                        </div>
+                    </div>
+                    <p class="unit-note">Relative to root font size</p>
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- TASK 4 -->
+        <section class="task-card">
+            <h2>Task 4: Navigation Bar</h2>
+            <p class="description">
+                Use Flexbox to arrange a logo, links and search bar.
+            </p>
+
+            <nav class="navbar">
+                <div class="logo">MyLogo<span>.</span></div>
+
+                <div class="links">
+                    <a href="#home">Home</a>
+                    <a href="#about">About</a>
+                    <a href="#contact">Contact</a>
+                </div>
+
+                <form class="search" action="#">
+                    <input type="search" placeholder="Search here"
+                           aria-label="Search here">
+                    <button type="submit">Search</button>
+                </form>
+            </nav>
+        </section>
+
+
+        <!-- TASK 5 -->
+        <section class="task-card">
+            <h2>Task 5: Page Layout</h2>
+            <p class="description">
+                Create a header, three content boxes and a footer.
+            </p>
+
+            <header class="page-header" id="home">
+                <div class="logo">My Website</div>
+
+                <nav class="page-links">
+                    <a href="#home">Home</a>
+                    <a href="#about">About</a>
+                    <a href="#contact">Contact</a>
+                </nav>
+            </header>
+
+            <main class="content" id="about">
+                <div class="layout-box box1">Box 1</div>
+                <div class="layout-box box2">Box 2</div>
+                <div class="layout-box box3">Box 3</div>
+            </main>
+
+            <footer class="page-footer" id="contact">
+                Made with CSS | Web Engineering Lab 03
+            </footer>
+        </section>
+
+
+        <!-- TASK 6 -->
+        <section class="task-card">
+            <h2>Task 6: Fixed Love Nature Box</h2>
+            <p class="description">
+                The nature box stays at a fixed position on the screen.
+            </p>
+
+            <div class="nature-demo">
+                <h3>Keep Our Planet Green!</h3>
+                <p>
+                    Trees give us oxygen, flowers add beauty, and plants
+                    help keep our environment healthy.
+                </p>
+                <p>
+                    We should protect nature and keep our surroundings clean.
+                </p>
+            </div>
+        </section>
+
+
+        <!-- TASK 7 -->
+        <section class="task-card">
+            <h2>Task 7: Flexbox Centering</h2>
+            <p class="description">
+                Use justify-content and align-items to center a child.
+            </p>
+
+            <div class="parent">
+                <div class="child">Centered Box</div>
+            </div>
+        </section>
+
+
+        <!-- TASK 8 -->
+        <section class="task-card">
+            <h2>Task 8: Media Queries</h2>
+            <p class="description">
+                Resize your browser to see the background color change.
+            </p>
+
+            <div class="responsive-box">
+                Resize Your Browser
+            </div>
+
+            <div class="screen-guide">
+                <span>Below 300px: Green</span>
+                <span>300–399px: Pink</span>
+                <span>400–600px: Red</span>
+                <span>Above 600px: Blue</span>
+            </div>
+        </section>
+
+
+        <!-- TASK 9 -->
+        <section class="task-card">
+            <h2>Task 9: Hover Transition</h2>
+            <p class="description">
+                Move your mouse over the button to see the effect.
+            </p>
+
+            <div class="hover-area">
+                <button class="hover-button">Hover Me!</button>
+            </div>
+        </section>
+
+
+        <!-- TASK 10 -->
+        <section class="task-card">
+            <h2>Task 10: CSS Loader</h2>
+            <p class="description">
+                A rotating circle created using CSS animation.
+            </p>
+
+            <div class="loader-area">
+                <div class="loader" role="status"
+                     aria-label="Loading"></div>
+                <p>Loading...</p>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="main-footer">
+        <p>Web Engineering Lab 03</p>
+        <p>Practice • Learn • Create</p>
+    </footer>
+
+    <!-- Fixed Nature Box -->
+    <div class="love-nature">🌿 Love Nature</div>
+
+</body>
+</html>
